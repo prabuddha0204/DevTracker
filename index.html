@@ -7,11 +7,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevTracker-Track. Learn.Grow.</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   </head>
   <body>
-    <div class="logo">DevTracker</div>
+<div class="navbar">
+  <div class="logo">DevTracker</div>
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/prabuddha-saxena/" target="_blank" class="link"><i class="fa-brands fa-linkedin"></i></a><a href="https://github.com/prabuddha0204" target="_blank" class="link">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+</div>
+<div data-aos="fade-up" data-aos-duration="800">
+<div class="hero">
     <div class="heading">DevTracker</div>
 <div class="tagline">Track. Learn. Grow.</div>
 <div class="para">
@@ -19,7 +30,59 @@
         <span id="one">DevTracker</span> is your personal learning companion — built to keep you focused, organized, and on track. Whether you're learning to code, exploring new tools, or building real-world projects, DevTracker helps you break down topics, track progress, and check off milestones as you grow. Say goodbye to scattered notes and lost momentum — DevTracker brings structure to your progress.
     </p>
 </div>
-<div class="start">START YOUR JOURNEY</div>
-    <script src="app.js"></script>
+</div>
+</div>
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<div class="subcontent">
+    <div class="room"></div>
+<div class="heading space">FRONTEND</div>
+<div class="ht">
+<ul><li>
+   1. HTML <i class="fab fa-html5 new"></i>
+   <div class="list">
+  <ul class="neew">
+    <li class="nnew">
+      <input type="checkbox" class="neww"> Boilerplate<br>
+<input type="checkbox" class="neww"> Text Content (Headings, Paragraphs, Spans)<br>
+<input type="checkbox" class="neww"> Lists (ul, ol, li)<br>
+<input type="checkbox" class="neww"> Links & Anchors<br>
+<input type="checkbox" class="neww"> Images & Media<br>
+<input type="checkbox" class="neww"> Forms & Input Elements<br>
+<input type="checkbox" class="neww"> Tables<br>
+<input type="checkbox" class="neww"> Semantic Tags (header, footer, article, etc.)<br>
+<input type="checkbox" class="neww"> Inline vs Block Elements<br>
+<input type="checkbox" class="neww"> Meta Tags & SEO Basics<br>
+<input type="checkbox" class="neww"> Accessibility (alt, label, aria, etc.)<br>
+<input type="checkbox" class="neww"> HTML Entities<br>
+<input type="checkbox" class="neww"> ID vs Class<br>
+<input type="checkbox" class="neww"> Comments in HTML<br>
+<input type="checkbox" class="neww"> Deprecated Tags<br>
+    </li>
+  </ul>
+  <input type="text" id="topicInput" placeholder="Add new topic..." />
+  <button id="addBtn">Add Topic</button>
+</div>
+ <div class="progress-wrapper">
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+  <p id="progressText">Progress: 0%</p>
+</div>
+</li></ul>
+</div>
+</div>
+</div> 
+
+<script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+</script>
   </body>
 </html>
