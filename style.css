@@ -299,7 +299,7 @@ ul {
   .tagline {
     font-size: 3rem;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .hero,
     .subcontent,
     .hero.show,
