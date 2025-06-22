@@ -195,6 +195,7 @@ ul {
 }
 #progressText {
   font-weight: 200;
+  text-transform: uppercase;
 }
 /* Tablet styles */
 @media screen and (max-width: 768px) {
